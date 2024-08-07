@@ -14,4 +14,4 @@ including the [datasets](datasets/), [codes](src/), and an [subgraph ranking res
 
 (complete readme to-be-added)
 
-![](framework.png)
+<!-- ![](framework.png) -->

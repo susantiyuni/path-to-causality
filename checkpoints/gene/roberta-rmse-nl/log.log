@@ -1,0 +1,40 @@
+07/15/2024 22:45:18 [INFO] ====Input Arguments====
+07/15/2024 22:45:18 [INFO] {
+  "model_name": "roberta-base",
+  "loss_type": "pointwise_rmse",
+  "train_path": "datasets/gene/16-1/train_full.jsonl",
+  "test_path": "datasets/gene/16-1/test_truth.jsonl",
+  "checkpoint_path": "checkpoints/gene/16-1/roberta-rmse-nl",
+  "do_train": true,
+  "epoch": 10,
+  "neg_num": 5,
+  "include_node_labels": true,
+  "include_rel_types": false,
+  "do_eval": false
+}
+07/15/2024 22:45:18 [WARNING] Detected kernel version 4.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+07/15/2024 22:46:14 [INFO] epoch=0 all_metrics={'NDCG@1': 0.44694, 'NDCG@3': 0.50427, 'NDCG@5': 0.55977, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:46:14 [INFO] Congratulations! New best accuracy: 0.55977
+07/15/2024 22:46:48 [INFO] epoch=1 all_metrics={'NDCG@1': 0.46395, 'NDCG@3': 0.50201, 'NDCG@5': 0.56215, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:46:48 [INFO] Congratulations! New best accuracy: 0.56215
+07/15/2024 22:47:23 [INFO] epoch=2 all_metrics={'NDCG@1': 0.36259, 'NDCG@3': 0.45613, 'NDCG@5': 0.53516, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:47:53 [INFO] epoch=3 all_metrics={'NDCG@1': 0.51497, 'NDCG@3': 0.5103, 'NDCG@5': 0.56786, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:47:53 [INFO] Congratulations! New best accuracy: 0.56786
+07/15/2024 22:48:24 [INFO] epoch=4 all_metrics={'NDCG@1': 0.4483, 'NDCG@3': 0.4941, 'NDCG@5': 0.55523, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:48:56 [INFO] epoch=5 all_metrics={'NDCG@1': 0.41973, 'NDCG@3': 0.4781, 'NDCG@5': 0.54843, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:49:31 [INFO] epoch=6 all_metrics={'NDCG@1': 0.43129, 'NDCG@3': 0.49623, 'NDCG@5': 0.5534, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:49:58 [INFO] epoch=7 all_metrics={'NDCG@1': 0.4619, 'NDCG@3': 0.51504, 'NDCG@5': 0.56327, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:50:18 [INFO] epoch=8 all_metrics={'NDCG@1': 0.40476, 'NDCG@3': 0.47973, 'NDCG@5': 0.54735, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:50:39 [INFO] epoch=9 all_metrics={'NDCG@1': 0.38435, 'NDCG@3': 0.48362, 'NDCG@5': 0.54575, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} 
+
+07/15/2024 22:50:39 [INFO] # BEST: 0.56786 # All: {'NDCG@1': 0.51497, 'NDCG@3': 0.5103, 'NDCG@5': 0.56786, 'MAP@1': 0.14354, 'MAP@3': 0.43061, 'MAP@5': 0.71769, 'Recall@1': 0.14354, 'Recall@3': 0.43061, 'Recall@5': 0.71769} # Epoch: 3
+

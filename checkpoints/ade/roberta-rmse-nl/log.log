@@ -1,0 +1,39 @@
+07/15/2024 23:14:19 [INFO] ====Input Arguments====
+07/15/2024 23:14:19 [INFO] {
+  "model_name": "roberta-base",
+  "loss_type": "pointwise_rmse",
+  "train_path": "datasets/ade/16-1/train_full.jsonl",
+  "test_path": "datasets/ade/16-1/test_truth.jsonl",
+  "checkpoint_path": "checkpoints/ade/16-1/roberta-rmse-nl",
+  "do_train": true,
+  "epoch": 10,
+  "neg_num": 5,
+  "include_node_labels": true,
+  "include_rel_types": false,
+  "do_eval": false
+}
+07/15/2024 23:14:19 [WARNING] Detected kernel version 4.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+07/15/2024 23:15:36 [INFO] epoch=0 all_metrics={'NDCG@1': 0.46241, 'NDCG@3': 0.48609, 'NDCG@5': 0.5612, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:15:36 [INFO] Congratulations! New best accuracy: 0.5612
+07/15/2024 23:16:32 [INFO] epoch=1 all_metrics={'NDCG@1': 0.3985, 'NDCG@3': 0.48722, 'NDCG@5': 0.55026, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:17:24 [INFO] epoch=2 all_metrics={'NDCG@1': 0.42857, 'NDCG@3': 0.47243, 'NDCG@5': 0.55101, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:18:18 [INFO] epoch=3 all_metrics={'NDCG@1': 0.43609, 'NDCG@3': 0.46781, 'NDCG@5': 0.54974, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:19:24 [INFO] epoch=4 all_metrics={'NDCG@1': 0.44361, 'NDCG@3': 0.50061, 'NDCG@5': 0.56085, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:20:30 [INFO] epoch=5 all_metrics={'NDCG@1': 0.52632, 'NDCG@3': 0.52372, 'NDCG@5': 0.57605, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:20:30 [INFO] Congratulations! New best accuracy: 0.57605
+07/15/2024 23:21:36 [INFO] epoch=6 all_metrics={'NDCG@1': 0.49624, 'NDCG@3': 0.51519, 'NDCG@5': 0.56856, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:22:40 [INFO] epoch=7 all_metrics={'NDCG@1': 0.40977, 'NDCG@3': 0.47149, 'NDCG@5': 0.5487, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:23:47 [INFO] epoch=8 all_metrics={'NDCG@1': 0.38346, 'NDCG@3': 0.48675, 'NDCG@5': 0.54877, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:24:43 [INFO] epoch=9 all_metrics={'NDCG@1': 0.42481, 'NDCG@3': 0.49354, 'NDCG@5': 0.55534, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} 
+
+07/15/2024 23:24:43 [INFO] # BEST: 0.57605 # All: {'NDCG@1': 0.52632, 'NDCG@3': 0.52372, 'NDCG@5': 0.57605, 'MAP@1': 0.16541, 'MAP@3': 0.44361, 'MAP@5': 0.7218, 'Recall@1': 0.16541, 'Recall@3': 0.44361, 'Recall@5': 0.7218} # Epoch: 5
+

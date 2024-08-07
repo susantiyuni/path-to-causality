@@ -1,0 +1,13 @@
+{
+  "model_name": "roberta-base",
+  "loss_type": "rank_net",
+  "train_path": "datasets/gene/16-1/train_full.jsonl",
+  "test_path": "datasets/gene/16-1/test_truth.jsonl",
+  "checkpoint_path": "checkpoints/gene/16-1/roberta-rnet-nl",
+  "do_train": true,
+  "epoch": 10,
+  "neg_num": 5,
+  "include_node_labels": true,
+  "include_rel_types": false,
+  "do_eval": false
+}

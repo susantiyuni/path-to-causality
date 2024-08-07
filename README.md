@@ -1,5 +1,5 @@
-## Supplementary materials for KDD 2025 paper: 
-#### Paths to Causality: Finding Informative Subgraphs within Knowledge Graphs for Knowledge-based Causal Discovery
+# Supplementary materials for KDD 2025 paper: 
+## Paths to Causality: Finding Informative Subgraphs within Knowledge Graphs for Knowledge-based Causal Discovery
 
 Including the preprocessed datasets, codes, and subgraph ranking results from the subgraph re-rankers.
 <!-- including the [datasets](datasets/), [codes](src/), and an [subgraph ranking results](checkpoints) from the subgraph re-rankers. -->

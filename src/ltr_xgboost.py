@@ -70,8 +70,8 @@ set_seed(1111)
 # TASK = 'gene'
 # TASK = 'ade'
 TASK = 'semeval'
-TEST_DATA = f'/home/yuni/kit-tud/ltr/datasets/{TASK}/16-1/test_truth.jsonl'
-TRAIN_DATA = f'/home/yuni/kit-tud/ltr/datasets/{TASK}/16-1/train_full.jsonl'
+TEST_DATA = f'datasets/{TASK}/test_truth.jsonl'
+TRAIN_DATA = f'datasets/{TASK}/train_full.jsonl'
 SAVE_PATH ='checkpoints/embedding/'
 EPOCH = 10
 CONTEXT_SIZE = 2

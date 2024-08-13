@@ -1,10 +1,11 @@
 export CUDA_VISIBLE_DEVICES=1
 
-tag_checkpoint='roberta-lnet'
+tag_checkpoint='roberta-lnet-new'
 model_name="roberta-base" 
 loss="list_net" #rank_net, pointwise_rmse
 
-for task in "ade" "comagc" "gene" "semeval"; do
+# for task in "ade" "comagc" "gene" "semeval"; do
+for task in "comagc"; do
   train_path="datasets/${task}/train_full.jsonl"
   test_path="datasets/${task}/test_truth.jsonl"
   checkpoint_path="checkpoints/${task}/${tag_checkpoint}"

@@ -8,7 +8,7 @@ for task in "ade" "comagc" "gene" "semeval"; do
   train_path="datasets/${task}/train_full.jsonl"
   test_path="datasets/${task}/test_truth.jsonl"
   checkpoint_path="checkpoints/${task}/${tag_checkpoint}"
-  python ./ltr_nn.py \
+  python src/ltr_nn.py \
     --train_path ${train_path} \
     --test_path ${test_path} \
     --checkpoint_path ${checkpoint_path} \

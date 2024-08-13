@@ -1,5 +1,5 @@
 import jsonlines, json, os
-import subgraph as sub
+# import subgraph as sub
 import random, ast
 
 remove = ["<e1>","</e1>","<e2>","</e2>"]

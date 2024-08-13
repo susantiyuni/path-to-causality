@@ -95,6 +95,8 @@ def main():
     logging.info (f'Input {i=}: {row}')
     if instruct_type == 'fewshot':
       # test_prompt = icl.generate_prompt_test(row, args.n_subgraph, args.kg_path, node_mapping, args.template_id)
+      print ('icl - abort')
+      sys.exit()
     elif instruct_type == 'zeroshot':
       test_prompt = zero.generate_prompt(row, args.task, args.n_subgraph, args.template_id, args.subgraph_mode, args.model_name)
     else: test_prompt = input_prompt

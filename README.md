@@ -10,7 +10,7 @@ Including the preprocessed datasets, codes, and subgraph ranking results from th
 #### Running main experiment (Knowledge-based Causal Discovery)
 `bash run_kbcd.sh`
 
-#### Running Subgraph ReRanker
+#### Running (Training) Subgraph ReRanker
 `bash run_ltr.sh`
 
 (complete readme to-be-added)

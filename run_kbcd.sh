@@ -29,7 +29,7 @@ for task in "comagc"; do
   test_path="checkpoints/${task}/${test_file}"
   # test_path="datasets/${task}/${test_file}" #for baseline (random, sim)
   output_path="results/${task}/${tag_checkpoint}"
-  python instruct.py \
+  python src/instruct.py \
   --task ${task} \
   --train_path ${train_path} \
   --test_path ${test_path} \

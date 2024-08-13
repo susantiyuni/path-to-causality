@@ -1,6 +1,7 @@
 import numpy as np
 import random
 import jsonlines, os, itertools
+import torch
 
 def write_path(p, nl, reltypes ):
   c = [k for k in reltypes.split('_')[1] if k.islower()][0]

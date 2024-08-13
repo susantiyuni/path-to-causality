@@ -26,8 +26,8 @@ n_subgraph=1
 # for task in "ade" "comagc" "gene" "semeval"; do
 for task in "comagc"; do
   train_path="datasets/${task}/train_full.jsonl"
-  test_path="checkpoints/${task}/${test_file}"
-  # test_path="datasets/${task}/${test_file}" #for baseline (random, sim)
+  # test_path="checkpoints/${task}/${test_file}" #for ltr-based
+  test_path="datasets/${task}/${test_file}" #for baseline (random, sim)
   output_path="results/${task}/${tag_checkpoint}"
   python src/instruct.py \
   --task ${task} \

@@ -23,7 +23,8 @@ n_subgraph=1
 # template_id='tnb'
 # n_subgraph=0
 
-for task in "ade" "comagc" "gene" "semeval"; do
+# for task in "ade" "comagc" "gene" "semeval"; do
+for task in "comagc"; do
   train_path="datasets/${task}/train_full.jsonl"
   test_path="checkpoints/${task}/${test_file}"
   # test_path="datasets/${task}/${test_file}" #for baseline (random, sim)

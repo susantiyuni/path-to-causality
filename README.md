@@ -1,5 +1,5 @@
 # Supplementary materials: 
-## Paths to Causality: Finding Informative Subgraphs within Knowledge Graphs for Knowledge-based Causal Discovery
+## Causality Through Connections: Knowledge Graphs and Large Language Models for Enhanced Causal Inference
 
 Including the preprocessed datasets, codes, and subgraph ranking results from the subgraph re-rankers.
 <!-- including the [datasets](datasets/), [codes](src/), and an [subgraph ranking results](checkpoints) from the subgraph re-rankers. -->

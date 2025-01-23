@@ -7,7 +7,7 @@ Including the preprocessed datasets, codes, and subgraph ranking results from th
 #### Requirements
 ```pip install -r requirements.txt```
 
-#### Running main experiment (Knowledge-based Causal Discovery)
+#### Running main experiment
 `bash run_kbcd.sh`
 
 #### Running (Training) Subgraph Ranker

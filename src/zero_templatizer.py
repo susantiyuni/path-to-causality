@@ -3,13 +3,11 @@ import jsonlines, json, os
 import random, ast
 
 remove = ["<e1>","</e1>","<e2>","</e2>"]
+# prefix = "Given the following information, classify the relation between the pair. If there is a cause-effect relationship, state 'causal'; otherwise, state 'non-causal'.\n" #only gemma 
 prefix_comagc = "Given the following information, classify the relation between the gene and disease pair. If there is a cause-effect relationship, say 'causal'; if not, say 'non-causal'.\n"
 prefix_ade = "Given the following information, classify the relation between the drug and side effect pair. If there is a cause-effect relationship, say 'causal'; if not, say 'non-causal'.\n"
-# prefix_gene = "Given the following information, classify the relation between the pair. If there is a cause-effect relationship, state 'causal'; otherwise, state 'non-causal'.\n" #only gemma 
 prefix_gene = "Given the following information, classify the relation between the gene pair. If there is a cause-effect relationship, state 'causal'; otherwise, state 'non-causal'.\n"
 prefix_semeval = "Given the following information, classify the relation between the entity pair. If there is a cause-effect relationship, say 'causal'; if not, say 'non-causal'.\n"
-
-# prefix = "Classify the relation between the gene and disease pair. If there is a cause-effect relationship, say 'causal'; if not, say 'non-causal'. Use the following information as additional evidence. \n"
 
 # Classify the relation between the gene and disease pair: TRPV6 and prostate cancer. If there's a cause-and-effect relationship, say 'causal'; if not, say 'non-causal'.
 def tna_nocontext_a(test, *argv):
@@ -21,13 +19,7 @@ def tna_nocontext_a(test, *argv):
 # [Relation]:
 def tnb_nocontext_b(test, task, model_name, *argv):
   pair = f"[Pair]: {test['e1']} and {test['e2']}\n"
-  prompt = f"{prefix_mapping[task]}{pair}The relation between the pair is" #mistral
-  # if 'gemma' in model_name:
-  #   prompt = f"{prefix_mapping[task]}{pair}The relation between {test['e1']} and {test['e2']} is" #gemma
-  # elif 'llama' in model_name:
-  #   prompt = f"{prefix_mapping[task]}{pair}The relation between {test['e1']} and {test['e2']} is" #llama
-  # else:
-  #   prompt = f"{prefix_mapping[task]}{pair}[Relation]:" #mistral
+  prompt = f"{prefix_mapping[task]}{pair}The relation between the pair is"
   return prompt
 
 # [Pair]: TRPV6 and prostate cancer
@@ -45,7 +37,6 @@ def tca_context_a(test, task, *argv):
 # [Relation paths]: ['ILK', 'SLC7A1', 'prostate cancer']. 
 # [Relation]:
 def tcma_contextmetapath_a(test, task, model_name, n_subgraph, subgraph_mode):
-  # prefix = "Given the context sentence and relation paths, classify the relation between the gene and disease pair. Respond with 'non-causal' or 'causal'.\n"
   pair = f"[Pair]: {test['e1']} and {test['e2']}\n"
   sentence = ' '.join([x for x in test['sentence'].split() if x not in remove])
   sentence = f"[Context sentence]: {sentence}\n"

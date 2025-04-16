@@ -1,5 +1,5 @@
 # Supplementary materials: 
-## Paths to Causality: Finding Informative Subgraphs within Knowledge Graphs for Knowledge-based Causal Discovery
+### Paths to Causality: Finding Informative Subgraphs within Knowledge Graphs for Knowledge-based Causal Discovery
 
 Including the preprocessed datasets, codes, [prompt](src/zero_templatizer.py), and subgraph ranking results from the subgraph rankers.
 <!-- including the [datasets](datasets/), [codes](src/), and an [subgraph ranking results](checkpoints) from the subgraph re-rankers. -->

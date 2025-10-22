@@ -16,3 +16,6 @@ Including the preprocessed datasets, codes, [prompt](src/zero_templatizer.py), a
 (complete readme to-be-added)
 
 ![](framework.png)
+
+#### keywords: 
+KGSubgraphAsPrompt
